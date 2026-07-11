@@ -1,0 +1,110 @@
+﻿<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DISC客戶溝通解碼</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero" id="top">
+    <div class="hero__media" aria-hidden="true"></div>
+    <section class="hero__content">
+      <p class="site-name">DISC 客戶溝通解碼</p>
+      <h1><span class="hero-title-line">話要對頻，</span><span class="hero-title-line">溝通才會前進。</span></h1>
+      <p class="lead">依不同客戶調整說法與節奏，讓你的專業更容易被理解、被接受。</p>
+      <a class="primary-action" href="#decoder">開始解碼</a>
+      <p class="hero-quote">話沒有變，換個頻道，對方才收得到。</p>
+    </section>
+  </header>
+
+  <main>
+    <section class="band decoder" id="decoder">
+      <div class="section-head compact">
+        <p class="eyebrow">開始解碼</p>
+        <h2 class="mobile-two-line"><span>先選客戶風格，</span><span>再看溝通落差</span></h2>
+        <p>外在表現只是線索，不能替對方定型；重點是提醒自己換成對方比較容易接收的說法。</p>
+      </div>
+
+      <ol class="progress" aria-label="解碼進度">
+        <li class="is-active" data-step="customer">1 客戶風格</li>
+        <li data-step="seller">2 我的風格</li>
+        <li data-step="result">3 溝通解碼</li>
+      </ol>
+
+      <section class="step-panel is-active" id="customerStep" aria-labelledby="customerTitle">
+        <div class="step-title">
+          <p class="eyebrow">第一步</p>
+          <h3 id="customerTitle">客戶目前比較接近哪一種溝通風格？</h3>
+          <p>請先點選一張最接近客戶的卡片；選完後會自動進入下一步。</p>
+        </div>
+        <div class="style-grid" id="customerCards"></div>
+      </section>
+
+      <section class="step-panel" id="sellerStep" aria-labelledby="sellerTitle" hidden>
+        <div class="step-title">
+          <p class="eyebrow">第二步</p>
+          <h3 id="sellerTitle">你的溝通方式通常比較接近哪一型？</h3>
+          <p>請點選你平時最常出現的溝通方式；選完後會自動產生解碼結果。</p>
+        </div>
+        <div class="choice-grid" id="sellerCards"></div>
+        <div class="step-actions">
+          <button class="text-button" type="button" id="backToCustomer">回到上一步</button>
+        </div>
+      </section>
+
+      <section class="step-panel result-panel" id="resultStep" aria-labelledby="resultTitle" hidden>
+        <div class="selection-strip" id="selectionStrip"></div>
+        <div class="result-hero">
+          <p class="eyebrow">你們的溝通解碼</p>
+          <h3 id="resultTitle"></h3>
+        </div>
+        <div class="result-grid" id="resultCore"></div>
+        <details class="detail-drawer" open>
+          <summary>看溝通調整</summary>
+          <p class="quote-line small">不是把專業說少一點，而是把專業放在對方接得住的位置。</p>
+          <div class="adjust-grid" id="adjustGrid"></div>
+        </details>
+        <section class="say-section" aria-labelledby="sayTitle">
+          <div>
+            <p class="eyebrow">換成這樣說</p>
+            <h3 id="sayTitle">提供表達方向，不是固定台詞</h3>
+            <p class="hint-text">方向參考，依現場微調。</p>
+          </div>
+          <div class="phrase-list" id="phraseList"></div>
+        </section>
+        <div class="step-actions">
+          <button class="text-button" type="button" id="backToSeller">回到上一步</button>
+          <button class="secondary-button" type="button" id="resetFlow">重新選擇</button>
+        </div>
+      </section>
+    </section>
+
+    <section class="band pitfalls" id="pitfalls">
+      <div class="section-head">
+        <p class="eyebrow">客戶溝通雷達</p>
+        <h2 class="mobile-two-line"><span>先看客戶怎麼接收，</span><span>再決定怎麼說</span></h2>
+      </div>
+      <div class="pitfall-tabs" id="pitfallTabs" role="tablist" aria-label="選擇客戶DISC類型"></div>
+      <div class="pitfall-content" id="pitfallContent"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>真正好的溝通，不是要求別人照自己的方式理解，而是願意換成對方比較容易接收的方式表達。</p>
+    <small>DISC不是替客戶貼標籤，而是提醒自己多一種說法。</small>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
