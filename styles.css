@@ -132,7 +132,7 @@ button:focus-visible, a:focus-visible, summary:focus-visible {
 }
 h1, h2, h3, p { margin-top: 0; }
 .hero-title-line { display: inline; }
-.mobile-two-line span { display: inline; }
+  .mobile-two-line span { display: inline; }
 h1 {
   max-width: none;
   margin-bottom: 16px;
@@ -477,6 +477,10 @@ h1 {
 }
 @media (max-width: 560px) {
   html { font-size: 90%; }
+  
+  .pitfalls .section-head h2 {
+    font-size: clamp(1.62rem, 3.6vw, 2.7rem);
+  }
   .mobile-two-line span {
     display: block;
     white-space: nowrap;
@@ -500,7 +504,7 @@ h1 {
   .hero__media::before { opacity: .45; right: -90px; top: 24%; width: 360px; }
   .hero__media::after { opacity: .45; right: 18px; top: 58%; }
   h1 {
-    font-size: clamp(1.881rem, 8.4645vw, 2.66475rem);
+    font-size: clamp(1.608255rem, 7.2371475vw, 2.27836125rem);
     white-space: normal;
   }
   .hero-title-line {
@@ -518,7 +522,7 @@ h1 {
   .step-panel { padding: 16px; }
   .phrase-card { grid-template-columns: 1fr; }
   .secondary-button, .text-button { width: 100%; box-sizing: border-box; }
-  .primary-action { width: 90%; max-width: 100%; box-sizing: border-box; }
+  .primary-action { width: 90%; max-width: 100%; box-sizing: border-box; display: flex; margin-left: auto; margin-right: auto; }
   .footer {
     text-align: left;
   }
@@ -530,6 +534,10 @@ h1 {
     display: block;
   }
 }
+
+
+
+
 
 
 
