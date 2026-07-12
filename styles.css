@@ -486,17 +486,26 @@ h1 {
     font-size: .95rem;
     padding-inline: 6px;
   }
+  .pitfall-heading {
+    padding: 18px;
+  }
+  .pitfall-heading h3 {
+    font-size: clamp(1.25rem, 5.3vw, 1.45rem);
+    line-height: 1.15;
+    white-space: nowrap;
+  }
   .pitfall-alert { grid-template-columns: 1fr; }
   .band { padding: 54px 14px; }
-  .hero__content { width: min(100% - 28px, 1120px); padding: 70px 0; }
+  .hero__content { width: min(calc(100% - 28px), 1120px); max-width: calc(100% - 28px); padding: 70px 0; overflow-x: hidden; }
   .hero__media::before { opacity: .45; right: -90px; top: 24%; width: 360px; }
   .hero__media::after { opacity: .45; right: 18px; top: 58%; }
   h1 {
-    font-size: clamp(1.98rem, 8.91vw, 2.805rem);
+    font-size: clamp(1.881rem, 8.4645vw, 2.66475rem);
     white-space: normal;
   }
   .hero-title-line {
     display: block;
+    max-width: 100%;
     white-space: nowrap;
   }
   .lead {
@@ -508,7 +517,8 @@ h1 {
   .style-card, .choice-card { min-height: auto; padding: 16px; }
   .step-panel { padding: 16px; }
   .phrase-card { grid-template-columns: 1fr; }
-  .secondary-button, .text-button, .primary-action { width: 100%; }
+  .secondary-button, .text-button { width: 100%; box-sizing: border-box; }
+  .primary-action { width: 90%; max-width: 100%; box-sizing: border-box; }
   .footer {
     text-align: left;
   }
@@ -520,6 +530,9 @@ h1 {
     display: block;
   }
 }
+
+
+
 
 
 
